@@ -1,0 +1,7 @@
+from . import db 
+
+# 3 columns in our table
+class Movie(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  title = db.Column(db.String(50))
+  rating = db.Column(db.Integer)
